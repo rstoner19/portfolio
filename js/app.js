@@ -6,7 +6,7 @@ function Portfolio(portInfo){
   this.projectUrl = portInfo.Url;
   this.category = portInfo.category;
   this.createdOn = portInfo.createdOn;
-  this.detail = portInfo.detial;
+  this.detail = portInfo.detail;
 
 }
 
@@ -14,7 +14,6 @@ Portfolio.prototype.toHtml = function(){
   var $newPort = $('article.portDisplay').clone();
   $newPort.attr('data-category', this.category);
   $newPort.find('h2').text(this.title);
-  
 
 
   $newPort.removeClass('portDisplay');

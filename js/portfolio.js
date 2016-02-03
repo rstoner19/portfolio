@@ -9,6 +9,13 @@ var portData = [
     detail: 'A project in CodeFellows 201 that required an output based on a random value based on a minimum and maximum input, as well as allowing the user to input data for a new coffe location.'
   },
   {
+    title: 'Lorem Ipsum',
+    projectUrl: 'google.com',
+    category: 'Lorem',
+    createdOn: '2014-01-15',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac eros posuere, viverra quam nec, euismod mauris. Mauris risus velit, sagittis ac accumsan tempor, pretium sit amet nisl. Integer posuere porttitor dolor. Phasellus ac risus bibendum, vehicula urna non, fermentum metus. Quisque varius egestas turpis ut gravida. Cras sed iaculis sem. Suspendisse ultrices fermentum eros, vitae tempor tellus porta eget. Morbi posuere est at nunc lobortis placerat. Cras dictum augue sit amet ante blandit, placerat sodales nisi tincidunt. Maecenas id sem tincidunt, sodales lorem eget, pretium justo. Sed quis molestie ante. Quisque nec mauris volutpat, mattis elit sed, ornare nulla. Morbi imperdiet egestas ligula nec tempus. Cras aliquam et diam ut faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
     title: 'Cliquor Cabinet',
     projectUrl: 'http://pasaunders.github.io/cocktail-project/index.html',
     category: '201 CodeFellows',

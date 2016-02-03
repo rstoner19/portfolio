@@ -16,7 +16,7 @@ Portfolio.prototype.toHtml = function(){
   $newPort.find('h3').text(this.title);
   $newPort.append('<p>'+this.detail+'</p>');
   $newPort.find('.date-created').text('Created On: ' + this.createdOn);
-
+  $newPort.attr('data-category', this.category);
   $newPort.append('<hr>');
   $newPort.removeClass('port-display');
   return $newPort;

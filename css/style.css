@@ -1,9 +1,10 @@
 body {
   margin: 0px;
+  background-color: #333333;
 }
 
 header {
-  background-image: -webkit-linear-gradient(#333333,#0174A3);;
+  background-image: -webkit-linear-gradient(#333333,#0174A3);
   height: 150px;
   background-size: cover;
   display: flex;
@@ -25,18 +26,30 @@ header > h1 {
 }
 
 hr {
-  width: 90%;
+  width: 98%;
   margin: auto;
+}
+h2{
+  color: white;
+  border-bottom: solid 2px #0174A3;
+  border-right: solid 2px #0174A3;
+  margin-bottom: -12px;
+  font-style: underline;
+  width: 85px;
 }
 
 .navbar{
   display: flex;
   justify-content: space-around;
-  height:20px;
+  height:25px;
   background-color: rgb(35, 96, 147);
-  box-shadow: 1px 3px gray;
+  box-shadow: .1px 3px #222222;
   margin-bottom: 10px;
   align-items: center;
+}
+
+.navbar> p{
+  cursor: pointer;
 }
 
 .date-created{
@@ -52,10 +65,19 @@ section{
   margin-top: 10px;
   display: flex;
   width: 97.5%;
-  border: 1px solid gray;
+  border: 2px solid #222222;
   border-radius: 20px;
   flex-direction: column;
   margin: auto;
   padding-left: 10px;
   padding-bottom: 1em;
+}
+
+#portfolio > article {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#about-me{
+  margin-top: 10px;
 }

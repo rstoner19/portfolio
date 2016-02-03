@@ -32,3 +32,10 @@ portData.forEach(function(ele) {
 portfolios.forEach(function(a){
   $('#portfolio').append(a.toHtml());
 });
+
+function displayAboutMe(ele){
+  var $aboutMe = $('#about-me');
+  $aboutMe.find('h3').text(ele.fullName);
+  $aboutMe.find('p').append(ele.bio);
+};
+displayAboutMe(aboutMe);

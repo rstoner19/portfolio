@@ -5,6 +5,7 @@ function Portfolio(portInfo){
   this.title = portInfo.title;
   this.projectUrl = portInfo.projectUrl;
   this.category = portInfo.category;
+  this.image = portInfo.image;
   this.createdOn = portInfo.createdOn;
   this.detail = portInfo.detail;
 
@@ -15,6 +16,11 @@ Portfolio.prototype.toHtml = function(){
   $newPort.find('a:first').attr('href', this.projectUrl);
   $newPort.find('h3').text(this.title);
   $newPort.append('<p>'+this.detail+'</p>');
+  if(this.image){
+    console.log($newPort.find('p'));
+
+    $newPort.find('p').prepend('<img src="' + this.image + '">');
+  }
   $newPort.find('.date-created').text('Created On: ' + this.createdOn);
   $newPort.attr('data-category', this.category);
   $newPort.append('<hr>');

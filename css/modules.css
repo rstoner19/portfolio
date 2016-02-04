@@ -1,3 +1,9 @@
+.navbar {
+  background-color: rgb(35, 96, 147);
+  box-shadow: .1px 3px #222222;
+  margin-bottom: 10px;
+}
+
 .menu {
   display: block;
   width: 1.75em;
@@ -8,25 +14,33 @@
   width: 1.75em;
   margin-left: 1em;
 }
+
 .icon-menu:hover {
-  background-color: red;
+  display: block;
 }
 
-
-
 @media only screen and (min-width:600px) {
-  ul {
+
+  .navbar ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
   }
-  ul li {
-    cursor: pointer;
+
+  span {
+    display:block;
   }
-  .navbar{
-    height: 20px;
-  }
+
   .icon-menu {
     display: none;
+  }
+}
+
+@media only screen and (max-width:599px) {
+  .navbar:hover ul {
+    display: block;
+  }
+  section {
+    width: 95%;
   }
 }

@@ -1,0 +1,32 @@
+.menu {
+  display: block;
+  width: 1.75em;
+  margin-left: 1.5em;
+}
+
+.icon-menu {
+  width: 1.75em;
+  margin-left: 1em;
+}
+.icon-menu:hover {
+  background-color: red;
+}
+
+
+
+@media only screen and (min-width:600px) {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  ul li {
+    cursor: pointer;
+  }
+  .navbar{
+    height: 20px;
+  }
+  .icon-menu {
+    display: none;
+  }
+}

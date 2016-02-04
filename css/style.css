@@ -10,7 +10,6 @@ header {
   display: flex;
   color: white;
   font-size: 1.5rem;
-  margin-bottom: 0px;
 }
 
 a, a:link, a:active, a:visited {
@@ -23,7 +22,6 @@ header > h1 {
   margin-left: 10%;
   width: 95%;
   justify-content: center;
-  margin-bottom: -10px;
 }
 
 hr {
@@ -39,23 +37,20 @@ h2{
   width: 85px;
 }
 
-.navbar{
-  height:20px;
-  background-color: rgb(35, 96, 147);
-  box-shadow: .1px 3px #222222;
-  margin-bottom: 10px;
-  margin-top: -16px;
-  align-content: center;
-}
-
 ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
+  display: none;
+  margin: 0px;
 }
 
-ul>li {
+ul li {
   cursor: pointer;
+  list-style-type: none;
+  margin-bottom: .5em;
+  font-size: 1.25em;
+}
+
+span {
+  display: none;
 }
 
 .date-created{
@@ -77,6 +72,12 @@ section{
   margin: auto;
   padding-left: 10px;
   padding-bottom: 1em;
+}
+
+section img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: .3em;
 }
 
 #portfolio > article {

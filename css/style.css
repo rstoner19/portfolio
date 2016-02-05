@@ -32,7 +32,7 @@ h2{
   color: white;
   border-bottom: solid 2px #0174A3;
   border-right: solid 2px #0174A3;
-  margin-bottom: -12px;
+  margin-bottom: 0px;
   font-style: underline;
   width: 85px;
 }
@@ -45,7 +45,6 @@ ul {
 ul li {
   cursor: pointer;
   list-style-type: none;
-  margin-bottom: .5em;
   font-size: 1.25em;
 }
 
@@ -58,7 +57,6 @@ span {
   color: white;
   margin-left: 12px;
   font-size: 13px;
-
 }
 
 section{
@@ -67,7 +65,7 @@ section{
   display: flex;
   width: 97.5%;
   border: 2px solid #222222;
-  border-radius: 20px;
+  border-radius: 5px;
   flex-direction: column;
   margin: auto;
   padding-left: 10px;
@@ -75,9 +73,14 @@ section{
 }
 
 section img {
-  display: block;
+  float: right;
+  margin-left: .5em;
   max-width: 100%;
   margin-bottom: .3em;
+}
+
+article {
+  box-shadow: 10px 4px 10px #333333;
 }
 
 #portfolio > article {

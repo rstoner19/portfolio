@@ -3,14 +3,15 @@
   <head>
     <title>Rick's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/modules.css">
 
     <script id="port-template" type="text/x-handlebars-template">
       <article class="clearfix" data="{{category}}">
         <a href="{{projectUrl}}"><h3>{{title}}</h3></a>
-        <p class="date-created">{{createdOn}}</p>
+        <p class="date-created">Published {{daysAgo}} days ago on {{createdOn}}</p>
         <img src="{{image}}">
         <p>{{detail}}</p>
       </script>

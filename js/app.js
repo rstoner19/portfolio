@@ -13,6 +13,7 @@ function Portfolio(portInfo){
 
 Portfolio.prototype.toHtml = function(){
   var template = Handlebars.compile($('#port-template').text());
+  this.daysAgo = parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000);
   return template(this);
 };
 

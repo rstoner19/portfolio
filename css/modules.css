@@ -19,6 +19,13 @@
   display: block;
 }
 
+.date-created{
+  font-weight: bold;
+  color: white;
+  margin: .1em auto .2em 0em;
+  font-size: 13px;
+}
+
 @media only screen and (min-width:600px) {
 
   .navbar ul {

@@ -1,0 +1,42 @@
+ul {
+  display: none;
+  margin: 0px;
+}
+
+ul li {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 1.25em;
+}
+
+section{
+  background-color: #2ea1cd;
+  margin-top: 10px;
+  display: flex;
+  width: 97.5%;
+  border: 2px solid #222222;
+  border-radius: 5px;
+  flex-direction: column;
+  margin: auto;
+  padding: 0em .5em 1em .5em;
+}
+
+section img {
+  float: right;
+  margin-left: .5em;
+  max-width: 100%;
+  margin-bottom: .3em;
+}
+
+article {
+  box-shadow: 10px 4px 10px #333333;
+}
+
+#portfolio > article {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#about-me{
+  margin-top: 10px;
+}

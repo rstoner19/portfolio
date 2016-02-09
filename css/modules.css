@@ -51,4 +51,7 @@
   section {
     width: 95%;
   }
+  span {
+    display: none;
+  }
 }

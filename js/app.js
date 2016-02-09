@@ -40,7 +40,7 @@ Portfolio.fetchAll = function() {
     $.getJSON('data/portfolio.json')
     .done(function(data) {
       localStorage.setItem('portData', JSON.stringify(data));
-      Portfolio.loadAll(JSON.parse(localStorage.portData));
+      Portfolio.loadAll(data);
       portfolios.initIndexPage();
     });
   }

@@ -1,14 +1,14 @@
 (function(module) {
+
   'use strict';
   var portfolios = {};
-
+  Portfolio.all = [];
   function Portfolio(ops){
     Object.keys(ops).forEach(function(e, index, keys) {
       this[e] = ops[e];
     },this);
   }
 
-  Portfolio.all = [];
   Portfolio.prototype.toHtml = function(){
     var template = Handlebars.compile($('#port-template').text());
     this.daysAgo = parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000);
@@ -25,7 +25,6 @@
     portData.sort(function(a,b) {
       return (new Date(b.createdOn)) - (new Date(a.createdOn));
     });
-    console.log(portData);
     Portfolio.all = portData.map(function(ele){
       return new Portfolio(ele);
     });
@@ -51,5 +50,7 @@
     $aboutMe.find('p').append(ele.bio);
   };
   displayAboutMe(aboutMe);
+
   module.Portfolio = Portfolio;
-}),(window);
+  module.portfolios = portfolios;
+})(window);

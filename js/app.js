@@ -1,7 +1,6 @@
 (function(module) {
-
   'use strict';
-  var portfolios = {};
+
   Portfolio.all = [];
   function Portfolio(ops){
     Object.keys(ops).forEach(function(e, index, keys) {
@@ -15,7 +14,7 @@
     return template(this);
   };
 
-  portfolios.initIndexPage = function() {
+  Portfolio.initIndexPage = function() {
     Portfolio.all.forEach(function(a){
       $('#portfolio').append(a.toHtml());
     });
@@ -30,17 +29,33 @@
     });
   };
 
-  Portfolio.fetchAll = function(fn) {
+  Portfolio.loadPortfolioInfo = function (source, fn){
+    $.getJSON(source)
+     .done(function(data) {
+       localStorage.setItem('portData', JSON.stringify(data));
+       Portfolio.loadAll(JSON.parse(localStorage.portData));
+       fn();
+     });
+  };
+
+  Portfolio.fetchAll = function(initFn) {
     if (localStorage.portData) {
-      Portfolio.loadAll(JSON.parse(localStorage.portData));
-      fn();
+      $.ajax({
+        type: 'HEAD',
+        url: 'data/portfolio.json',
+        success: function(data, message, xhr) {
+          var eTag = xhr.getResponseHeader('eTag');
+          if(!localStorage.eTag || eTag !== localStorage.eTag){
+            localStorage.eTag = eTag;
+            Portfolio.loadPortfolioInfo('data/portfolio.json', initFn);
+          } else {
+            Portfolio.loadAll(JSON.parse(localStorage.portData));
+            initFn();
+          };
+        }
+      });
     } else {
-      $.getJSON('data/portfolio.json')
-       .done(function(data) {
-         localStorage.setItem('portData', JSON.stringify(data));
-         Portfolio.loadAll(JSON.parse(localStorage.portData));
-         fn();
-       });
+      Portfolio.loadPortfolioInfo('data/portfolio.json', initFn);
     }
   };
 
@@ -52,5 +67,4 @@
   displayAboutMe(aboutMe);
 
   module.Portfolio = Portfolio;
-  module.portfolios = portfolios;
 })(window);

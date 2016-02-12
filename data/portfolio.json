@@ -12,7 +12,9 @@
     "category": "201 CodeFellows",
     "image": "img/logo.png",
     "createdOn": "2016-01-21",
-    "detail": "A project in CodeFellows 201 where a hypothetical client requested to test various products for user preference.  The results were stored over time in local storage to keep track of the results for users over time.  Also, there was a check in place to ensure users were given a random result that wasn't duplicate of any other images."
+    "detail": "A project in CodeFellows 201 where a hypothetical client requested to test various products for user preference.  The results were stored over time in local storage to keep track of the results for users over time.  Also, there was a check in place to ensure users were given a random result that wasn't duplicate of any other images. TEST TEST TEST HMMMMMM..."
+
+
   },
   {
     "title": "Lorem Ipsum",

@@ -1,5 +1,4 @@
 (function(module) {
-
   'use strict';
   var portfolios = {};
   Portfolio.all = [];
@@ -32,6 +31,20 @@
 
   Portfolio.fetchAll = function(fn) {
     if (localStorage.portData) {
+      $.ajax({
+        type: 'HEAD',
+        url: 'data/portfolio.json',
+        success: function(data, message, xhr) {
+          var eTag = xhr.getResponseHeader('eTag');
+          if(!localStorage.eTag || eTag !== localStorage.eTag){
+            localStorage.eTag = eTag;
+            $.getJSON('data/portfolio.json')
+            .done(function(data) {
+              localStorage.setItem('portData', JSON.stringify(data));
+            });
+          }
+        }
+      });
       Portfolio.loadAll(JSON.parse(localStorage.portData));
       fn();
     } else {

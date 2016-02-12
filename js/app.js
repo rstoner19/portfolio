@@ -2,15 +2,13 @@
 Portfolio.all = [];
 var portfolios = {};
 
-function Portfolio(portInfo){
-  this.title = portInfo.title;
-  this.projectUrl = portInfo.projectUrl;
-  this.category = portInfo.category;
-  this.image = portInfo.image;
-  this.createdOn = portInfo.createdOn;
-  this.detail = portInfo.detail;
+function Portfolio(ops){
+  Object.keys(ops).forEach(function(e, index, keys) {
+    this[e] = ops[e];
+  },this);
 }
 
+Portfolio.all = [];
 Portfolio.prototype.toHtml = function(){
   var template = Handlebars.compile($('#port-template').text());
   this.daysAgo = parseInt((new Date() - new Date(this.createdOn))/60/60/24/1000);
@@ -27,22 +25,23 @@ Portfolio.loadAll = function(portData) {
   portData.sort(function(a,b) {
     return (new Date(b.createdOn)) - (new Date(a.createdOn));
   });
-  portData.forEach(function(ele) {
-    Portfolio.all.push(new Portfolio(ele));
+  console.log(portData);
+  Portfolio.all = portData.map(function(ele){
+    return new Portfolio(ele);
   });
 };
 
-Portfolio.fetchAll = function() {
+Portfolio.fetchAll = function(fn) {
   if (localStorage.portData) {
     Portfolio.loadAll(JSON.parse(localStorage.portData));
-    portfolios.initIndexPage();
+    fn();
   } else {
     $.getJSON('data/portfolio.json')
-    .done(function(data) {
-      localStorage.setItem('portData', JSON.stringify(data));
-      Portfolio.loadAll(JSON.parse(localStorage.portData));
-      portfolios.initIndexPage();
-    });
+     .done(function(data) {
+       localStorage.setItem('portData', JSON.stringify(data));
+       Portfolio.loadAll(JSON.parse(localStorage.portData));
+       fn();
+     });
   }
 };
 

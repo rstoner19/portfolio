@@ -40,3 +40,7 @@ a, a:link, a:active, a:visited {
   text-decoration: none;
   color: black;
 }
+
+a:hover {
+  color: #333333
+}

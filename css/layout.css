@@ -23,6 +23,7 @@ section{
 
 section img {
   float: right;
+  margin-right: .5em;
   margin-left: .5em;
   max-width: 100%;
   margin-bottom: .3em;

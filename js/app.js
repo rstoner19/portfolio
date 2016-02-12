@@ -3,14 +3,11 @@
   Portfolio.all = [];
   var portfolios = {};
 
-  function Portfolio(portInfo){
-    this.title = portInfo.title;
-    this.projectUrl = portInfo.projectUrl;
-    this.category = portInfo.category;
-    this.image = portInfo.image;
-    this.createdOn = portInfo.createdOn;
-    this.detail = portInfo.detail;
-  }
+  Object.keys(opts).forEach(function(e, index, keys) {
+    this[e] = opts[e];
+  },this);
+
+  Portfolio.all = [];
 
   Portfolio.prototype.toHtml = function(){
     var template = Handlebars.compile($('#port-template').text());
@@ -33,7 +30,7 @@
     });
   };
 
-  Portfolio.fetchAll = function() {
+  Portfolio.fetchAll = function(  ) {
     if (localStorage.portData) {
       Portfolio.loadAll(JSON.parse(localStorage.portData));
       portfolios.initIndexPage();

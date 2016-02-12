@@ -1,5 +1,5 @@
 'use strict';
-
+// ADD AN IFFE
 var portfolioView = {};
 
 portfolioView.handleNav = function() {

@@ -10,6 +10,12 @@
   margin-left: 1.5em;
 }
 
+/* ADD THIS TOO */
+.navbar:hover ul {
+  display: block;
+}
+/**/
+
 .icon-menu {
   width: 1.75em;
   margin-left: 1em;
@@ -35,20 +41,25 @@
     padding-top: 4px;
     padding-bottom: 4px;
   }
+
   span {
     display:block;
+  }
+
+  .navbar:hover ul {
+    display: flex;
   }
 
   .icon-menu {
     display: none;
   }
 }
-
-@media only screen and (max-width:599px) {
+/* REMOVE THIS? */
+/*@media only screen and (max-width:599px) {
   .navbar:hover ul {
     display: block;
   }
   section {
     width: 95%;
   }
-}
+}*/

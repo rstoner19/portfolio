@@ -1,6 +1,6 @@
 (function(module) {
   'use strict';
-
+  // MADE COMMENTS TO HELP SEPERATE AND READ
   Portfolio.all = [];
   function Portfolio(ops){
     Object.keys(ops).forEach(function(e, index, keys) {

@@ -38,6 +38,16 @@
      });
   };
 
+  Portfolio.numWords = function() {
+    return Portfolio.all.map(function(ele){
+      console.log(ele.detail);
+      return ele.detail.match(/\b\w+/g).length;
+    })
+    .reduce(function(acc, cur){
+      return acc + cur;
+    });
+  };
+
   Portfolio.fetchAll = function(initFn) {
     if (localStorage.portData) {
       $.ajax({

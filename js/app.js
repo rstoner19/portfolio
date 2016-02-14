@@ -21,10 +21,10 @@
   };
 
   Portfolio.loadAll = function(portData) {
-    portData.sort(function(a,b) {
+    Portfolio.all = portData.sort(function(a,b) {
       return (new Date(b.createdOn)) - (new Date(a.createdOn));
-    });
-    Portfolio.all = portData.map(function(ele){
+    })
+    .map(function(ele){
       return new Portfolio(ele);
     });
   };

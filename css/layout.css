@@ -20,11 +20,9 @@ section{
 }
 
 section img {
-  float: right;
-  margin-right: .5em;
-  margin-left: .5em;
+  float: left;
+  margin: .5em;
   max-width: 200px;
-  margin-bottom: .3em;
 }
 
 article {

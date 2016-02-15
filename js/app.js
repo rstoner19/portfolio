@@ -21,10 +21,10 @@
   };
 
   Portfolio.loadAll = function(portData) {
-    portData.sort(function(a,b) {
+    Portfolio.all = portData.sort(function(a,b) {
       return (new Date(b.createdOn)) - (new Date(a.createdOn));
-    });
-    Portfolio.all = portData.map(function(ele){
+    })
+    .map(function(ele){
       return new Portfolio(ele);
     });
   };
@@ -36,6 +36,15 @@
        Portfolio.loadAll(JSON.parse(localStorage.portData));
        fn();
      });
+  };
+
+  Portfolio.numWords = function() {
+    return Portfolio.all.map(function(ele){
+      return ele.detail.match(/\b\w+/g).length;
+    })
+    .reduce(function(acc, cur){
+      return acc + cur;
+    });
   };
 
   Portfolio.fetchAll = function(initFn) {

@@ -10,35 +10,38 @@
 
     <script id="port-template" type="text/x-handlebars-template">
       <article class="clearfix" data="{{category}}">
+        <img src="{{image}}">
         <a href="{{projectUrl}}"><h3>{{title}}</h3></a>
         <p class="date-created">Published {{daysAgo}} days ago on {{createdOn}}</p>
-        <img src="{{image}}">
         <p>{{detail}}</p>
-      </script>
+      </article>
+    </script>
 
   </head>
   <body>
-        <header>
-          <h1>Rick's Portfolio</h1>
-        </header>
-        <nav class="navbar">
-          <img src="css/fonts/menu.svg" class="icon-menu" >
-          <ul>
-            <li class="home"><img src="img/home3.png"> Home</li> <span>|</span>
-            <li class="about"><img src="img/pencil.png"> About </li> <span>|</span>
-            <li><a href="https://github.com/rstoner19/"><img src='img/github.png'> GitHub</a></li> <span>|</span>
-            <li><a href="https://www.facebook.com"><img src='img/facebook15.png'> Facebook</a></li>
-          </ul>
-        </nav>
-        <section id="portfolio">
-          <h2>Projects</h2>
-        </section>
-        <section id="about-me">
-          <h2>About Me</h2>
-          <article class='display-myinfo'>
-            <h3></h3>
-            <p>Bio: </p>
-        </section>
+    <header>
+      <h1>Rick's Portfolio</h1>
+    </header>
+    <nav class="navbar">
+      <img src="css/fonts/menu.svg" class="icon-menu" >
+      <div>
+        <ul>
+          <li class="home"><img src="img/home3.png"> Home</li> <span>|</span>
+          <li class="about"><img src="img/pencil.png"> About </li> <span>|</span>
+          <li><a href="https://github.com/rstoner19/"><img src='img/github.png'> GitHub</a></li> <span>|</span>
+          <li><a href="https://www.facebook.com"><img src='img/facebook15.png'> Facebook</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="portfolio">
+      <h2>Projects</h2>
+    </section>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <article class='display-myinfo'>
+        <h3></h3>
+        <p>Bio: </p>
+    </section>
     <footer>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

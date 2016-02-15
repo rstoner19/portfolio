@@ -1,8 +1,8 @@
 (function(module){
   var portfolioController = {};
+  Portfolio.fetchAll(Portfolio.initIndexPage);
 
   portfolioController.index = function (){
-    Portfolio.fetchAll(Portfolio.initIndexPage);
     $('#portfolio').show();
     $('#about-me').hide();
   };

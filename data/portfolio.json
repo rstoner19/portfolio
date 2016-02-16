@@ -3,6 +3,7 @@
     "title": "Campfire Coffee",
     "projectUrl": "http://rstoner19.github.io/campfire-coffee",
     "category": "201 CodeFellows",
+    "image": "img/campfire.jpg",
     "createdOn": "2016-01-15",
     "detail": "A project in CodeFellows 201 that required an output based on a random value based on a minimum and maximum input, as well as allowing the user to input data for a new coffe location."
   },
@@ -13,13 +14,6 @@
     "image": "img/logo.png",
     "createdOn": "2016-01-21",
     "detail": "A project in CodeFellows 201 where a hypothetical client requested to test various products for user preference.  The results were stored over time in local storage to keep track of the results for users over time.  Also, there was a check in place to ensure users were given a random result that wasn't duplicate of any other images."
-  },
-  {
-    "title": "Lorem Ipsum",
-    "projectUrl": "google.com",
-    "category": "Lorem",
-    "createdOn": "2014-01-15",
-    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac eros posuere, viverra quam nec, euismod mauris. Mauris risus velit, sagittis ac accumsan tempor, pretium sit amet nisl. Integer posuere porttitor dolor. Phasellus ac risus bibendum, vehicula urna non, fermentum metus. Quisque varius egestas turpis ut gravida. Cras sed iaculis sem. Suspendisse ultrices fermentum eros, vitae tempor tellus porta eget. Morbi posuere est at nunc lobortis placerat. Cras dictum augue sit amet ante blandit, placerat sodales nisi tincidunt. Maecenas id sem tincidunt, sodales lorem eget, pretium justo. Sed quis molestie ante. Quisque nec mauris volutpat, mattis elit sed, ornare nulla. Morbi imperdiet egestas ligula nec tempus. Cras aliquam et diam ut faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     "title": "Cliquor Cabinet",

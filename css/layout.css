@@ -9,12 +9,13 @@ ul li {
   font-size: 1.25em;
 }
 
-section{
+section {
   background-color: #E0E0E0;
   display: flex;
   width: 97.5%;
-  flex-direction: column;
   margin: auto;
+  margin-top: 50px;
+  flex-direction: column;
   padding: 0em .5em 1em .5em;
 }
 

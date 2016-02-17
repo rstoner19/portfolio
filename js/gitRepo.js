@@ -14,18 +14,7 @@
       }
     })
     .done(callback);
+  };
 
-    module.repos = repos;
-  }(window);
-
-
-
-
-
-
-
-
-
-
-
+  module.repos = repos;
 }(window));

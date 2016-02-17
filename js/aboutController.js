@@ -1,10 +1,11 @@
 (function(module){
   var aboutController = {};
+  console.log(repos.all);
 
   aboutController.index = function(){
-    // repos.requestRepos(aboutView.index);
     $('#portfolio').hide();
     $('#about-me').show();
+    repos.requestRepos(aboutView.index);
   };
 
   module.aboutController = aboutController;

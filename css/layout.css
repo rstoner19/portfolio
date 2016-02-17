@@ -31,6 +31,17 @@ article {
   /*width: 95%*/
 }
 
+table {
+  border: 2px black solid;
+  margin: auto;
+}
+
+td {
+  border: 1px black solid;
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
 #portfolio > article {
   padding-left: 10px;
   padding-right: 10px;

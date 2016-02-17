@@ -2,6 +2,7 @@
   var aboutController = {};
 
   aboutController.index = function(){
+    // repos.requestRepos(aboutView.index);
     $('#portfolio').hide();
     $('#about-me').show();
   };

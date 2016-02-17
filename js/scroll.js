@@ -2,7 +2,6 @@ $(function() {
     // Stick the #nav to the top of the window
   var nav = $('#nav');
   var navHomeY = nav.offset().top;
-  console.log(navHomeY);
   var isFixed = false;
   var $w = $(window);
   $w.scroll(function() {

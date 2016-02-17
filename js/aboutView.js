@@ -1,10 +1,14 @@
 (function(module){
   var aboutView = {};
 
-  aboutView.index = function(repo){
+  var render = function(repo){
+    console.log(repo.name);
     var template = Handlebars.compile($('#about-me-template').text());
-    console.log(repo[0].name);
-    return template(repo[0]);
+    return template(repo);
+  };
+
+  aboutView.index = function(){
+    $('.stats').append(repos.all.map(render));
   };
 
   module.aboutView = aboutView;

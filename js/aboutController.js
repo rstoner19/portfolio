@@ -2,10 +2,10 @@
   var aboutController = {};
 
 
-  repos.requestRepos(aboutView.index);
-  aboutController.index = function(){
+  aboutController.index = function(ctx, next){
     $('#portfolio').hide();
     $('#about-me').show();
+    next();
   };
 
   module.aboutController = aboutController;

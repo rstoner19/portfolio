@@ -12,11 +12,10 @@ ul li {
 section {
   background-color: #E0E0E0;
   display: flex;
-  width: 97.5%;
-  margin: auto;
-  margin-top: 50px;
+  width: 100%;
+  margin-top: -5px;
   flex-direction: column;
-  padding: 0em .5em 1em .5em;
+  padding: 1.5em 0em 1em 0em;
 }
 
 section img {
@@ -26,9 +25,10 @@ section img {
 }
 
 article {
-  box-shadow: 10px 4px 10px #333333;
-  margin-top: 10px;
-  /*width: 95%*/
+  /*box-shadow: 10px 4px 10px #333333;*/
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%
 }
 
 table {
@@ -40,11 +40,6 @@ td {
   border: 1px black solid;
   padding-left: .2em;
   padding-right: .2em;
-}
-
-#portfolio > article {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #about-me{

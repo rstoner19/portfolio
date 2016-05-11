@@ -44,8 +44,7 @@ p {
   font-family: 'Lato', serif;
 }
 
-/*LINK STYLES
-=======================================*/
+/*===========LINK STYLES===============*/
 a, a:link, a:active, a:visited {
   text-decoration: none;
   color: black;

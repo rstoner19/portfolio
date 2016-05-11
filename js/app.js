@@ -48,6 +48,7 @@
   };
 
   Portfolio.fetchAll = function(initFn) {
+    console.log(initFn);
     if (localStorage.portData) {
       $.ajax({
         type: 'HEAD',

@@ -19,11 +19,25 @@
   display: block;
 }
 
-.date-created{
+.date-created {
   font-weight: bold;
-  color: #666666;
+  color: #444444;
   margin: .1em auto .2em 0em;
   font-size: 13px;
+}
+
+/*=====Specific Projects ========*/
+
+#cliquor {
+  background-color: rgba(211, 211, 211, 1);
+}
+
+#busmall {
+  background-color: rgba(48, 110, 110, .25);
+}
+
+#campfire {
+  background-color: rgba(7, 20, 72, .5);
 }
 
 @media only screen and (min-width:600px) {
@@ -71,6 +85,12 @@
   .navbar:hover ul {
     display: block;
     border-top: 1px solid #333333;
+  }
+
+  article {
+    width: 100%;
+    padding-left: .5em;
+    padding-right: .5em;
   }
 
   section img {

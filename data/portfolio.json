@@ -1,6 +1,7 @@
 [
   {
     "title": "Campfire Coffee",
+    "project-id": "campfire",
     "projectUrl": "http://rstoner19.github.io/campfire-coffee",
     "category": "201 CodeFellows",
     "image": "img/campfire.jpg",
@@ -9,6 +10,7 @@
   },
   {
     "title": "Bus Mall Catalog",
+    "project-id": "busmall",
     "projectUrl": "http://rstoner19.github.io/busmall",
     "category": "201 CodeFellows",
     "image": "img/logo.png",
@@ -17,6 +19,7 @@
   },
   {
     "title": "Cliquor Cabinet",
+    "project-id": "cliquor",
     "projectUrl": "http://pasaunders.github.io/cocktail-project/index.html",
     "category": "201 CodeFellows",
     "image": "img/cliquor.jpg",
